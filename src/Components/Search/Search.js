@@ -8,7 +8,6 @@ import SearchIndex from './SearchIndex';
 //? 2.) ability to filter the array in the state by that term
 //? 3.) ability to display only the terms that match the search, or all if no search term is provided
 
-
 const Search = () => {
   return (
     <Container className="App">
@@ -16,7 +15,6 @@ const Search = () => {
       { <SearchIndex />}
     </Container>
   );
-
 }
 
 export default Search;

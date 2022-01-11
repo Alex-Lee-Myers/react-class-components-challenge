@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Input} from 'reactstrap';
- 
+
 //! In this challenge your goal is to use the existing code to create the following:
 //? 1.) ability to accept a search term from a user
 //? 2.) ability to filter the array in the state by that term
