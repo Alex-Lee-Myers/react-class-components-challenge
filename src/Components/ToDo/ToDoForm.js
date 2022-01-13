@@ -20,9 +20,17 @@ export default class ToDoForm extends Component {
     handleChange = (event) => {
         this.setState({ task: event.target.value });
     }
+
+    // if the string is empty, don't add it to the array
     
     handleSubmit = (event) => {
-        this.setState({ tasks: [...this.state.tasks, this.state.task] });
+        event.preventDefault();
+        if (this.state.task.length > 0) {
+        this.setState({
+            tasks: [...this.state.tasks, this.state.task],
+            task: '',
+        });
+        }
     }
     
     handleCheck = (event) => {
@@ -54,4 +62,3 @@ export default class ToDoForm extends Component {
         );
     }
     }
-//Complete
