@@ -22,12 +22,10 @@ export default class ToDoForm extends Component {
     }
     
     handleSubmit = (event) => {
-        event.preventDefault();
         this.setState({ tasks: [...this.state.tasks, this.state.task] });
     }
     
     handleCheck = (event) => {
-        event.preventDefault();
         this.setState({ completed: !this.state.completed });
     }
     
@@ -56,3 +54,4 @@ export default class ToDoForm extends Component {
         );
     }
     }
+//Complete
